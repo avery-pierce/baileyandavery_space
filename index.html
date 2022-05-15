@@ -3,17 +3,36 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&family=Mulish&display=swap" rel="stylesheet">
     <style>
       html {
-        background-color: #000;
+        background-color: rgb(0, 0, 0);
         color: #FFF;
       }
 
       h1, p {
         text-align: center;
-        font-family: 'Staatliches', sans-serif;
+        font-family: 'Mulish', sans-serif;
+        letter-spacing: 0.2em;
+      }
+
+      div#names-container {
+        margin-top: 2em;
+      }
+
+      div#names-container > p {
+        margin: 0.1em 0;
+      }
+
+      div#names-container > svg {
+        margin: 1em 0;
+        height: 50px;
+        width: 100%;
+      }
+
+      .uppercase {
+        text-transform: uppercase;
       }
 
       h1 {
@@ -26,97 +45,111 @@
         font-size: 2em;
       }
 
-      #solar-system {
-        max-width: 100%;
-        width: 440px;
-        height: 440px;
-        margin: auto;
-        display: block;
-        margin: -50px auto;
+      p#date-location {
+        font-size: 1.4em;
+        font-family: 'Libre Baskerville', serif;
+        font-style: italic;
+        line-height: 1.8em;
+        letter-spacing: 0.15em;
       }
 
+      #video {
+        max-width: 100%;
+        width: 440px;
+        height: 248px;
+        margin: auto;
+        display: block;
+      }
+      
       @media only screen and (min-width: 620px) {
-        #solar-system {
+        #video {
           width: 600px;
-          height: 600px;
-          margin: -60px auto;
+          height: 338px;
         }
       }
 
       @media only screen and (min-width: 840px) {
-        #solar-system {
+        #video {
           width: 820px;
-          height: 820px;
-          margin: -80px auto;
+          height: 462px;
+        }
+      }
+
+      #adler {
+        max-width: 100%;
+        width: 440px;
+        margin: auto;
+        display: block;
+      }
+
+      @media only screen and (min-width: 620px) {
+        #adler {
+          width: 600px;
+        }
+      }
+
+      @media only screen and (min-width: 840px) {
+        #adler {
+          width: 820px;
         }
       }
 
     </style>
   </head>
   <body>
-    <h1 id="save-the-date">Save the Date</h1>
-    <p>Bailey Easson ⦿ Avery Pierce</p>
-    <svg id="solar-system" width="1050" height="1045" viewBox="0 0 1050 1045" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <circle cx="143.483" cy="653.867" r="10" transform="rotate(71 143.483 653.867)" fill="#615EFF"/>
-      <path fill-rule="evenodd" clip-rule="evenodd" d="M661.792 909.023C451.38 981.474 222.4 872.809 144.597 665.818C145.529 665.73 146.466 665.531 147.39 665.213C148.09 664.972 148.754 664.673 149.377 664.322C226.327 868.616 452.408 975.832 660.164 904.296C871.654 831.474 984.066 600.995 911.244 389.505C838.423 178.016 607.943 65.604 396.454 138.426C188.698 209.962 76.5522 433.639 141.691 641.999C140.984 642.107 140.277 642.279 139.576 642.521C138.652 642.839 137.792 643.259 137.004 643.763C70.8764 432.752 184.414 206.149 394.826 133.698C608.927 59.9774 842.251 173.777 915.972 387.878C989.692 601.978 875.892 835.303 661.792 909.023Z" fill="url(#paint0_angular_2_60)"/>
-      <circle cx="238.689" cy="306.749" r="10" transform="rotate(127 238.689 306.749)" fill="#BAFCF8"/>
-      <path fill-rule="evenodd" clip-rule="evenodd" d="M308.133 816.108C150.258 697.141 116.271 474.759 229.418 314.372C230.008 315.089 230.693 315.749 231.467 316.333C232.065 316.783 232.69 317.169 233.336 317.492C121.942 475.664 155.509 694.837 311.142 812.115C469.929 931.769 695.65 900.046 815.304 741.26C934.958 582.473 903.235 356.752 744.449 237.098C588.815 119.82 368.88 147.966 247.54 298.643C247.052 298.111 246.508 297.616 245.911 297.166C245.136 296.582 244.313 296.106 243.461 295.736C366.448 142.764 589.583 114.138 747.458 233.104C908.45 354.421 940.613 583.277 819.297 744.269C697.981 905.261 469.125 937.424 308.133 816.108Z" fill="url(#paint1_angular_2_60)"/>
-      <circle cx="319.326" cy="759.101" r="10" transform="rotate(41 319.326 759.101)" fill="#FCB664"/>
-      <path fill-rule="evenodd" clip-rule="evenodd" d="M768.803 729.797C655.421 860.229 459.635 876.628 326.305 768.866C327.053 768.33 327.752 767.699 328.382 766.974C328.879 766.402 329.312 765.797 329.682 765.167C460.924 871.034 653.486 854.833 765.03 726.517C879.164 595.22 865.251 396.259 733.955 282.125C602.658 167.991 403.697 181.903 289.563 313.2C178.019 441.516 188.775 634.459 311.878 749.69C311.305 750.144 310.766 750.657 310.269 751.229C309.639 751.954 309.111 752.733 308.684 753.549C183.415 636.514 172.407 440.351 285.789 309.92C401.735 176.539 603.854 162.405 737.235 278.351C870.616 394.297 884.749 596.417 768.803 729.797Z" fill="url(#paint2_angular_2_60)"/>
-      <circle cx="256.541" cy="527.186" r="10" transform="rotate(89 256.541 527.186)" fill="#F0BD71"/>
-      <path fill-rule="evenodd" clip-rule="evenodd" d="M533.299 797.397C385.357 799.979 262.665 685.245 253.989 538.914C254.877 539.107 255.802 539.201 256.75 539.184C257.52 539.171 258.272 539.085 258.999 538.934C267.676 682.452 388.067 794.931 533.211 792.398C682.306 789.795 801.061 666.821 798.458 517.727C795.856 368.633 672.881 249.878 523.787 252.48C378.642 255.014 262.251 371.626 258.587 515.359C257.855 515.234 257.101 515.174 256.331 515.188C255.383 515.204 254.462 515.33 253.581 515.554C257.145 369.01 375.758 250.063 523.7 247.481C675.555 244.83 800.807 365.784 803.457 517.639C806.108 669.495 685.154 794.746 533.299 797.397Z" fill="url(#paint3_angular_2_60)"/>
-      <circle cx="505.521" cy="299.851" r="10" transform="rotate(175 505.521 299.851)" fill="#F49588"/>
-      <path fill-rule="evenodd" clip-rule="evenodd" d="M296.18 546.033C285.457 423.46 372.947 314.947 493.45 298.198C493.42 298.758 493.429 299.326 493.479 299.9C493.579 301.037 493.834 302.123 494.221 303.139C376.298 319.487 290.668 425.662 301.161 545.597C311.992 669.388 421.124 760.961 544.915 750.131C668.706 739.3 760.279 630.168 749.449 506.377C738.956 386.442 636.191 296.75 517.22 301.127C517.425 300.059 517.487 298.945 517.388 297.809C517.338 297.234 517.248 296.673 517.121 296.127C638.702 291.696 743.706 383.368 754.43 505.941C765.501 632.483 671.893 744.041 545.351 755.112C418.809 766.183 307.251 672.575 296.18 546.033Z" fill="url(#paint4_angular_2_60)"/>
-      <circle cx="594.745" cy="358.19" r="10" transform="rotate(-157 594.745 358.19)" fill="#88B8FF"/>
-      <path fill-rule="evenodd" clip-rule="evenodd" d="M353.339 453.436C391.724 363.006 493.607 318.959 584.996 351.188C584.49 351.895 584.053 352.668 583.699 353.501C583.381 354.25 583.145 355.014 582.987 355.782C494.158 324.66 395.24 367.52 357.942 455.39C319.098 546.899 361.792 652.569 453.301 691.412C544.809 730.256 650.48 687.562 689.323 596.053C726.622 508.183 688.739 407.254 604.645 364.976C605.088 364.328 605.473 363.628 605.791 362.879C606.145 362.045 606.398 361.194 606.554 360.339C693.222 403.69 732.311 507.577 693.926 598.007C654.004 692.057 545.398 735.937 451.347 696.015C357.297 656.093 313.417 547.487 353.339 453.436Z" fill="url(#paint5_angular_2_60)"/>
-      <circle cx="392.528" cy="544.682" r="10" transform="rotate(80 392.528 544.682)" fill="#FFE5C6"/>
-      <path fill-rule="evenodd" clip-rule="evenodd" d="M551.757 658.765C479.59 671.49 410.596 626.485 392.154 556.923C392.317 556.901 392.479 556.876 392.642 556.847C394.192 556.574 395.619 556.014 396.88 555.233C414.503 622.54 481.16 666.137 550.889 653.841C624.315 640.894 673.343 570.876 660.396 497.45C647.449 424.024 577.43 374.996 504.004 387.943C434.275 400.238 386.549 464.004 393.009 533.279C391.557 532.976 390.024 532.938 388.475 533.212C388.312 533.24 388.15 533.272 387.99 533.307C381.528 461.633 430.968 395.744 503.136 383.019C579.281 369.593 651.893 420.436 665.32 496.582C678.746 572.727 627.903 645.339 551.757 658.765Z" fill="url(#paint6_angular_2_60)"/>
-      <circle cx="616.486" cy="517.955" r="10" transform="rotate(-91 616.486 517.955)" fill="#C7C7C7"/>
-      <path fill-rule="evenodd" clip-rule="evenodd" d="M522.842 424.576C571.312 423.73 611.936 459.335 618.557 506.133C617.817 506.005 617.055 505.944 616.277 505.957C615.33 505.974 614.411 506.1 613.532 506.322C607.034 462.243 568.669 428.776 522.93 429.575C473.232 430.442 433.647 471.434 434.514 521.132C435.382 570.83 476.373 610.415 526.071 609.547C571.811 608.749 608.984 573.964 613.939 529.685C614.826 529.877 615.749 529.97 616.696 529.954C617.474 529.94 618.234 529.853 618.968 529.698C613.984 576.699 574.628 613.701 526.158 614.547C473.699 615.462 430.431 573.678 429.515 521.219C428.599 468.76 470.383 425.491 522.842 424.576Z" fill="url(#paint7_angular_2_60)"/>
-      <circle cx="525" cy="519" r="50" fill="#FCB664"/>
-      <defs>
-      <radialGradient id="paint0_angular_2_60" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(527.072 524.069) rotate(161) scale(429.31 429.421)">
-      <stop stop-color="#666" stop-opacity="0"/>
-      <stop offset="0.0729167" stop-color="#666" stop-opacity="0"/>
-      <stop offset="1" stop-color="#666"/>
-      </radialGradient>
-      <radialGradient id="paint1_angular_2_60" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(525.196 525.053) rotate(-143) scale(382.171 382.289)">
-      <stop stop-color="#666" stop-opacity="0"/>
-      <stop offset="0.0729167" stop-color="#666" stop-opacity="0"/>
-      <stop offset="1" stop-color="#666"/>
-      </radialGradient>
-      <radialGradient id="paint2_angular_2_60" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(527.544 522.141) rotate(131) scale(335.028 335.158)">
-      <stop stop-color="#666" stop-opacity="0"/>
-      <stop offset="0.0729167" stop-color="#666" stop-opacity="0"/>
-      <stop offset="1" stop-color="#666"/>
-      </radialGradient>
-      <radialGradient id="paint3_angular_2_60" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(527.217 523.909) rotate(179) scale(287.881 288.026)">
-      <stop stop-color="#666" stop-opacity="0"/>
-      <stop offset="0.0729167" stop-color="#666" stop-opacity="0"/>
-      <stop offset="1" stop-color="#666"/>
-      </radialGradient>
-      <radialGradient id="paint4_angular_2_60" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(524.008 525.051) rotate(-95) scale(240.722 240.895)">
-      <stop stop-color="#666" stop-opacity="0"/>
-      <stop offset="0.0729167" stop-color="#666" stop-opacity="0"/>
-      <stop offset="1" stop-color="#666"/>
-      </radialGradient>
-      <radialGradient id="paint5_angular_2_60" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(523.041 524.624) rotate(-67) scale(193.561 193.763)">
-      <stop stop-color="#666" stop-opacity="0"/>
-      <stop offset="0.0729167" stop-color="#666" stop-opacity="0"/>
-      <stop offset="1" stop-color="#666"/>
-      </radialGradient>
-      <radialGradient id="paint6_angular_2_60" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(527.108 521.7) rotate(170) scale(146.358 146.632)">
-      <stop stop-color="#666" stop-opacity="0"/>
-      <stop offset="0.0729167" stop-color="#666" stop-opacity="0"/>
-      <stop offset="1" stop-color="#666"/>
-      </radialGradient>
-      <radialGradient id="paint7_angular_2_60" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(524.622 519.059) rotate(-1) scale(99.115 99.5)">
-      <stop stop-color="#666" stop-opacity="0"/>
-      <stop offset="0.0729167" stop-color="#666" stop-opacity="0"/>
-      <stop offset="1" stop-color="#666"/>
-      </radialGradient>
-      </defs>
-      </svg>
-      <p>January 28th, 2023</p>
+    <div id="names-container">
+      <svg class="deco-divider" viewBox="0 0 1207 141" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M543.875 86H0V93H545.932L543.875 86ZM662.321 93L664.339 86H1207V93H662.321Z" fill="white"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M551.769 47H532.672H530L530.754 49.564L554.267 129.564L554.689 131H556.185H571.228L570.302 127H557.682L535.345 51H552.696L551.769 47ZM654.861 51L655.755 47H674.672H677.33L676.594 49.5538L653.542 129.554L653.126 131H651.62H636.978L637.872 127H650.115L672.015 51H654.861Z" fill="white"/>
+        <path d="M576.252 25L578.242 24.8051L578.065 23H576.252V25ZM547 25V23H544.484L545.052 25.4514L547 25ZM572.482 135L570.534 135.451L570.893 137H572.482V135ZM587.02 135V137H589.226L589.011 134.805L587.02 135ZM621.437 135L619.446 134.812L619.239 137H621.437V135ZM631.827 25V23H630.007L629.836 24.8119L631.827 25ZM661 25L662.952 25.4363L663.496 23H661V25ZM636.412 135V137H638.014L638.364 135.436L636.412 135ZM576.252 23H547V27H576.252V23ZM545.052 25.4514L570.534 135.451L574.431 134.549L548.948 24.5486L545.052 25.4514ZM572.482 137H587.02V133H572.482V137ZM574.261 25.1949L585.03 135.195L589.011 134.805L578.242 24.8051L574.261 25.1949ZM623.428 135.188L633.819 25.1881L629.836 24.8119L619.446 134.812L623.428 135.188ZM661 23H631.827V27H661V23ZM638.364 135.436L662.952 25.4363L659.048 24.5637L634.46 134.564L638.364 135.436ZM621.437 137H636.412V133H621.437V137Z" fill="white"/>
+        <path d="M634 2H574L587.412 139H621.059L634 2Z" stroke="white" stroke-width="4"/>
+        </svg>
+          
+      <p class="uppercase" id="bailey-name">Bailey Easson</p>
+      <p class="uppercase" id="avery-name">Avery Pierce</p>
+    </div>
+    <iframe id="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/EphKtzaELC4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <div>
+      <p id="date-location">
+        January 28th, 2023<br />
+        Adler Planetarium<br />
+        Chicago, IL<br />
+        Earth
+      </p>
+
+
+      <svg id="adler" viewBox="0 0 911 399" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <mask id="path-1-inside-1_105_9" fill="white">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M619.659 176C609.057 95.5158 536.85 33 449 33C361.15 33 288.943 95.5158 278.341 176H274.305C284.927 93.1624 359.09 29 449 29C538.91 29 613.073 93.1624 623.695 176H619.659Z"/>
+        </mask>
+        <path d="M619.659 176L615.694 176.522L616.152 180H619.659V176ZM278.341 176V180H281.848L282.306 176.522L278.341 176ZM274.305 176L270.337 175.491L269.759 180H274.305V176ZM623.695 176V180H628.241L627.663 175.491L623.695 176ZM623.625 175.478C612.744 92.8807 538.731 29 449 29V37C534.969 37 605.369 98.1509 615.694 176.522L623.625 175.478ZM449 29C359.269 29 285.256 92.8807 274.375 175.478L282.306 176.522C292.63 98.1509 363.031 37 449 37V29ZM274.305 180H278.341V172H274.305V180ZM449 25C357.207 25 281.231 90.532 270.337 175.491L278.272 176.509C288.622 95.7928 360.973 33 449 33V25ZM627.663 175.491C616.769 90.532 540.793 25 449 25V33C537.027 33 609.378 95.7928 619.727 176.509L627.663 175.491ZM619.659 180H623.695V172H619.659V180Z" fill="white" mask="url(#path-1-inside-1_105_9)"/>
+        <path d="M636 222V183L622.297 175.5L592.934 168L501.907 162H396.199L306.471 169L277.235 174.5L264 178.5V222" stroke="white" stroke-width="4"/>
+        <path d="M749 265V240.1L726.756 231.85L679.09 223.6L531.326 217H359.729L211.5 225L169.861 231.85L150 235.15V264" stroke="white" stroke-width="4"/>
+        <path d="M292.5 376H103V271.284L130 267.405L189.5 260.203L344.592 253H542.257L707.5 260.203L766 268.514L793 274.608V376H596" stroke="white" stroke-width="4"/>
+        <path d="M522 334V271H383V334" stroke="white" stroke-width="2"/>
+        <path d="M519 334V274H386V334" stroke="white"/>
+        <path d="M630.5 395.5L522 334H383L250 395.5" stroke="white" stroke-width="3"/>
+        <path d="M265 183.5L277.5 179.5L307 173.5L397 168.5H503.5L593 174L638 184" stroke="white"/>
+        <path d="M152 240L211.5 231L357.5 224H541.5L688 231.5L746.5 243.5" stroke="white"/>
+        <path d="M107 279.59L175.357 270.821L343.092 264H554.483L722.791 271.308L790 283" stroke="white"/>
+        <line x1="308.5" y1="211" x2="308.5" y2="179" stroke="white" stroke-width="3"/>
+        <line x1="212.5" y1="256" x2="212.5" y2="234" stroke="white" stroke-width="3"/>
+        <line x1="358.5" y1="250" x2="358.5" y2="228" stroke="white" stroke-width="3"/>
+        <line x1="342.5" y1="345" x2="342.5" y2="268" stroke="white" stroke-width="3"/>
+        <line x1="557.5" y1="348" x2="557.5" y2="271" stroke="white" stroke-width="3"/>
+        <line x1="725.5" y1="355" x2="725.5" y2="278" stroke="white" stroke-width="3"/>
+        <line x1="171.5" y1="355" x2="171.5" y2="278" stroke="white" stroke-width="3"/>
+        <line x1="542.5" y1="250" x2="542.5" y2="228" stroke="white" stroke-width="3"/>
+        <line x1="686.5" y1="256" x2="686.5" y2="234" stroke="white" stroke-width="3"/>
+        <line x1="395.5" y1="208" x2="395.5" y2="173" stroke="white" stroke-width="3"/>
+        <line x1="503.5" y1="208" x2="503.5" y2="173" stroke="white" stroke-width="3"/>
+        <line x1="591.5" y1="212" x2="591.5" y2="179" stroke="white" stroke-width="3"/>
+        <path d="M443 30L448.278 15L453 30" stroke="white" stroke-width="2"/>
+        </svg>
+        
+    </div>
+
+   
   </body>
 </html>
