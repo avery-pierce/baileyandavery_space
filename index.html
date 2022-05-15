@@ -18,17 +18,31 @@
       }
 
       div#names-container {
-        margin-top: 2em;
+        margin-top: 1em;
       }
+
+      @media only screen and (min-width: 620px) {
+        div#names-container {
+          margin-top: 2em;
+        }
+      }
+
 
       div#names-container > p {
         margin: 0.1em 0;
       }
 
       div#names-container > svg {
-        margin: 1em 0;
-        height: 50px;
+        margin: 0.6em 0;
+        height: 30px;
         width: 100%;
+      }
+
+      @media only screen and (min-width: 620px) {
+        div#names-container > svg {
+          margin: 1em 0;
+          height: 50px;
+        }
       }
 
       .uppercase {
@@ -42,15 +56,27 @@
       }
 
       p {
-        font-size: 2em;
+        font-size: 1.4em;
+      }
+
+      @media only screen and (min-width: 620px) {
+        p {
+          font-size: 2em;
+        }
       }
 
       p#date-location {
-        font-size: 1.4em;
+        font-size: 0.8em;
         font-family: 'Libre Baskerville', serif;
         font-style: italic;
         line-height: 1.8em;
         letter-spacing: 0.15em;
+      }
+
+      @media only screen and (min-width: 620px) {
+        p#date-location {
+          font-size: 1.4em;
+        }
       }
 
       #video {
