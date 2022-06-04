@@ -68,17 +68,24 @@
         }
       }
 
-      p#date-location {
+      p.body-text {
         font-size: 0.8em;
         font-family: 'Libre Baskerville', serif;
         font-style: italic;
         line-height: 1.8em;
         letter-spacing: 0.15em;
+        max-width: 400px;
+        margin: auto;
+        padding-left: 2em;
+        padding-right: 2em;
+        margin-top: 1em;
+        margin-bottom: 1em;
       }
 
       @media only screen and (min-width: 620px) {
-        p#date-location {
+        p.body-text {
           font-size: 1.4em;
+          max-width: 800px;
         }
       }
 
@@ -140,13 +147,16 @@
     <iframe id="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/EphKtzaELC4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
     <div>
-      <p id="date-location">
+      <p class="body-text" id="date-location">
         January 28th, 2023<br />
         Adler Planetarium<br />
         Chicago, IL<br />
         Earth
       </p>
 
+      <p class="body-text">
+        This is going to be a late evening affair, so parents with children are strongly encouraged to hire a sitter and enjoy the moonlit night to themselves filled with celestial foods, drinks, and entertainment.
+      </p>
 
       <svg id="adler" viewBox="0 0 911 399" fill="none" xmlns="http://www.w3.org/2000/svg">
         <mask id="path-1-inside-1_105_9" fill="white">
