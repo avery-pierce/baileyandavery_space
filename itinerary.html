@@ -14,7 +14,7 @@
         color: #FFF;
       }
 
-      h1, p {
+      h1 {
         text-align: center;
         font-family: 'Futura', 'Mulish', sans-serif;
         font-weight: 500;
@@ -91,78 +91,57 @@
         font-style: italic;
         line-height: 1.8em;
         letter-spacing: 0.15em;
-        max-width: 400px;
         margin: auto;
-        padding-left: 2em;
-        padding-right: 2em;
-        margin-top: 1.5em;
-        margin-bottom: 1.5em;
+        padding-left: 0;
+        padding-right: 1em;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+        color: #ccc;
       }
 
       @media only screen and (min-width: 620px) {
         p{
-          font-size: 1.4em;
+          font-size: 1em;
           max-width: 800px;
         }
       }
 
-      p.detail {
-        color: #ccc;
+      p.headline, th p {
+        color: #fff;
+        font-weight: bold;
       }
 
-      p.detail strong {
+      p strong {
         color: #fff;
         font-weight: normal;
         text-decoration: underline;
       }
 
-      #engagement {
-        display: block;
-        width: 100%;
-        max-width: 512px;
+      table {
         margin: auto;
-      }
-
-      #video {
-        max-width: 100%;
-        width: 440px;
-        height: 248px;
-        margin: auto;
-        display: block;
+        max-width: 400px;
       }
       
-      @media only screen and (min-width: 620px) {
-        #video {
-          width: 600px;
-          height: 338px;
-        }
-      }
-
-      @media only screen and (min-width: 840px) {
-        #video {
-          width: 820px;
-          height: 462px;
-        }
-      }
-
-      #adler {
-        max-width: 100%;
-        width: 440px;
-        margin: auto;
-        display: block;
+      th {
+        min-width: 8em;
+        text-align: right;
       }
 
       @media only screen and (min-width: 620px) {
-        #adler {
-          width: 600px;
+        table {
+          max-width: 800px;
+        }
+
+        th {
+          min-width: 10em;
         }
       }
 
-      @media only screen and (min-width: 840px) {
-        #adler {
-          width: 820px;
-        }
+      th, td {
+        vertical-align: baseline;
       }
+
+
 
     </style>
   </head>
@@ -200,7 +179,7 @@
                 <p>2:00p-3:00p</p>
             </th>
             <td>
-                <h2>Wedding rehearsal at Adler Planetarium</h2>
+                <p class="headline">Wedding rehearsal at Adler Planetarium</p>
                 <p>Members of the wedding partry and parents of the bride & groom arrive at Adler for wedding ceremony rehearsal. Please arrive 15 minutes early, if possible. Use the Accessible entrance (to the right of the building)</p>
             </td>
         </tr>
@@ -209,7 +188,7 @@
                 <p>3:00p-5:45p</p>
             </th>
             <td>
-                <h2>Wedding party checks into hotel</h2>
+                <p class="headline">Wedding party checks into hotel</p>
                 <p>Wedding party members check into Marriott hotel and relax and/or socialize. Bride and groom meet and greet family members who have already arrived.</p>
             </td>
         </tr>
@@ -218,7 +197,7 @@
                 <p>5:45p-5:55p</p>
             </th>
             <td>
-                <h2>Wedding party rendezvous in Mariott lobby</h2>
+              <p class="headline">Wedding party rendezvous in Mariott lobby</p>
                 <p>Wedding party, their +1's, and parents gather in hotel lobby before departing as a group to dinner.</p>
             </td>
         </tr>
@@ -227,7 +206,7 @@
                 <p>6:00p-8:00p</p>
             </th>
             <td>
-                <h2>Wedding party dinner reservation</h2>
+              <p class="headline">Wedding party dinner reservation</p>
                 <p>Wedding party and parents take 5 minute walk to <a href="https://www.pizzeriaunodue.com/">Pizzeria Due</a> from hotel. Salad, deep dish pizza, and pasta, courtesy of the bride and groom.</p>
             </td>
         </tr>
@@ -247,7 +226,7 @@
                 <p>11:00a-2:00p</p>
             </th>
             <td>
-                <h2>Bridesmaids meet at hotel bridal suite</h2>
+              <p class="headline">Bridesmaids meet at hotel bridal suite</p>
                 <p>Bridesmaids and mothers meet in bridal suite to for hair and makeup.</p>
             </td>
         </tr>
@@ -256,7 +235,7 @@
                 <p>1:00p-2:00p</p>
             </th>
             <td>
-                <h2>Groomsmen meet at Hayden's room</h2>
+              <p class="headline">Groomsmen meet at Hayden's room</p>
                 <p>Groomsmen and fathers meet in Hayden's room to get ready.</p>
             </td>
         </tr>
@@ -265,7 +244,7 @@
                 <p>2:00p-3:00p</p>
             </th>
             <td>
-                <h2>Photographer arrives at hotel</h2>
+              <p class="headline">Photographer arrives at hotel</p>
                 <p>Photographer arrives for "getting ready" photos for both the bridesmaids and groomsmen.</p>
             </td>
         </tr>
@@ -274,7 +253,7 @@
                 <p>3:00p-4:00p</p>
             </th>
             <td>
-                <h2>Wedding party departs hotel for Adler</h2>
+              <p class="headline">Wedding party departs hotel for Adler</p>
                 <p>Bride & Groom traveling separately. Arrive at Adler for first look photos outside (weather permitting).</p>
             </td>
         </tr>
@@ -283,7 +262,7 @@
                 <p>5:45p-6:00p</p>
             </th>
             <td>
-                <h2>Wedding party photos</h2>
+              <p class="headline">Wedding party photos</p>
                 <p>Immediate family and wedding party photos inside Adler Planetarium.</p>
             </td>
         </tr>
@@ -292,7 +271,7 @@
                 <p>6:30p</p>
             </th>
             <td>
-                <h2>Doors open</h2>
+              <p class="headline">Doors open</p>
                 <p>Wedding guests begin arriving.</p>
             </td>
         </tr>
@@ -301,7 +280,7 @@
                 <p>7:00p-7:15p</p>
             </th>
             <td>
-                <h2>Wedding ceremony</h2>
+              <p class="headline">Wedding ceremony</p>
                 <p>In Grainger sky theater</p>
             </td>
         </tr>
@@ -310,7 +289,7 @@
                 <p>7:15p-8:30p</p>
             </th>
             <td>
-                <h2>Cockatil Hour</h2>
+              <p class="headline">Cockatil Hour</p>
                 <p>In welcome gallery</p>
             </td>
         </tr>
@@ -319,7 +298,7 @@
                 <p>7:15p-8:30p</p>
             </th>
             <td>
-                <h2>Cockatil Hour</h2>
+              <p class="headline">Cockatil Hour</p>
                 <p>In welcome gallery</p>
             </td>
         </tr>
@@ -328,7 +307,7 @@
                 <p>8:30p-1:00a</p>
             </th>
             <td>
-                <h2>Dinner and reception</h2>
+              <p class="headline">Dinner and reception</p>
                 <p>Guests invited to dinner in the Solarium. Speeches, cake cutting, and dance floor.</p>
             </td>
         </tr>
